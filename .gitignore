@@ -1,0 +1,6 @@
+*.lock
+*.class
+*.o
+
+.idea/
+.gradle/
