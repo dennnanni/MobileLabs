@@ -1,4 +1,4 @@
-package com.example.traveldiary
+package com.example.traveldiary.ui.composables
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search

@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.traveldiary.ui.screens.HomeScreen
+import com.example.traveldiary.ui.screens.TravelDetailsScreen
 import com.example.traveldiary.ui.theme.TravelDiaryTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,7 +24,13 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    HomeScreen(listOf("viaggio1", "viaggio2", "viaggio3", "viaggio1", "viaggio2", "viaggio3", "viaggio1", "viaggio2", "viaggio3", "viaggio1", "viaggio2", "viaggio3"))
+//                    val list: MutableList<String> = mutableListOf()
+//                    for(i in 1..20) {
+//                        list.add("Travel $i")
+//                    }
+//
+//                    HomeScreen(list)
+                    TravelDetailsScreen()
                 }
             }
         }
