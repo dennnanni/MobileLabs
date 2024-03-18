@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.traveldiary.ui.screens.HomeScreen
 import com.example.traveldiary.ui.theme.TravelDiaryTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,25 +23,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    HomeScreen(listOf("viaggio1", "viaggio2", "viaggio3", "viaggio1", "viaggio2", "viaggio3", "viaggio1", "viaggio2", "viaggio3", "viaggio1", "viaggio2", "viaggio3"))
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    TravelDiaryTheme {
-        Greeting("Android")
     }
 }
